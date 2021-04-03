@@ -2,7 +2,7 @@
 public class App {
 
 	public static void main(String[] args) {
-		// Establishing variables
+		// Initializing and setting variables
 		double itemPrice = 234.00;
 		double moneyInWallet = 600.00;
 		int numberOfFriends = 3;
@@ -11,15 +11,20 @@ public class App {
 		String lastName = "Wright";
 		char middleInitial = 'E';
 		
-		// How much money is in my wallet after buying the item
+		// New amount of money in wallet after buying the item
+		// Setting variable using subtraction operation
 		moneyInWallet = moneyInWallet - itemPrice;
 		System.out.println("I had to spend $" + itemPrice + " and was left with only $" + moneyInWallet + " in my wallet... T_T");
 		
-		// Establishing first variable madeFriends and what it is equal to
-		int madeFriends = ageInYears + numberOfFriends;
-		System.out.println("In my " + ageInYears + " years of life, I have made " + madeFriends + " friends.");
+		// Number of friends you’ve made each year based on your age variable 
+		// and your number of friends variable
+		// Establishing first variable madeFriends and what it is equal to with the division operation, 
+		// also casting double on the answer to get a proper decimal number
+		double madeFriends = ((double) numberOfFriends) / ageInYears;
+		System.out.println("I have made about " + madeFriends + " friends over the " + ageInYears + " years I have lived.");
 		
-		// Establishing second variable fullName and what it is equal to
+		// Full name based on first name, middle initial, and last name
+		// Establishing second variable fullName and what it is equal to using concatenation
 		String fullName = firstName + " " + middleInitial + " " + lastName;
 		System.out.println("Hi, my name is " + fullName + ".");
 		
